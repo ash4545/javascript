@@ -1,0 +1,23 @@
+<form action="loginSuccess.html">
+Username:
+<input type='text' name='username'><br>
+Password:
+<input type='password' name='password'><br>
+<input type='submit' value='submit' onclick='return loginValidator()'>
+</form>
+
+<script>
+function loginValidator()
+{
+	if(document.forms[0].username.value.length == 0)
+	{
+		alert("enter username");
+		return false;
+	}
+	if(document.forms[0].password.value.length == 0)
+	{
+		alert("enter password");
+		return false;
+	}
+}
+</script>

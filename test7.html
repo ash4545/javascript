@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function getEventType(event) { 
+    document.getElementById("demo").innerHTML = event.type;
+}
+</script>
+</head>
+
+<body>
+
+<p onmousedown="getEventType(event)">
+Click on this paragraph. A message will tell what type of event was triggered.</p>
+
+<p id="demo"></p>
+
+</body>
+</html>
+<html>
+<head>
+<script>
+function coordinates(event) {
+    document.getElementById("demo").innerHTML =
+    "X = " + event.screenX + "<br>Y = " + event.screenY;
+}
+</script>
+</head>
+<body>
+
+<p onmousedown="coordinates(event)">
+Click this paragraph, to display the x and y coordinates of the cursor, relative to the screen.
+</p>
+
+<p id="demo"></p>
+
+</body>
+</html>

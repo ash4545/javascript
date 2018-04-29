@@ -1,0 +1,57 @@
+<h1>Welcome to Bizruntime!</h1>
+<form action="loginSuccess.html">
+Username:
+<input type='text' name='username'><br>
+Password:
+<input type='password' name='password'><br>
+<input type='submit' value='submit' onclick='return loginValidator()'>
+</form>
+
+<script>
+function loginValidator()
+{
+	if(document.forms[0].username.value.length == 0)
+	{
+		alert("enter username");
+		return false;
+	}
+	if(document.forms[0].password.value.length == 0)
+	{
+		alert("enter password");
+		return false;
+	}
+}
+</script>
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function displayDate() {
+    document.getElementById("demo").innerHTML = Date();
+}
+</script>
+</head>
+<body>
+<p id="demo">This is the today date</p>
+
+<button type="button" onclick="displayDate()">Display Date</button>
+</body>
+</html> 
+<html>
+<head>
+<script>
+function message() {
+    alert("This alert box was triggered by the onreset event handler");
+}
+</script>
+</head>
+<body>
+
+<form onreset="date()">
+Enter your date: <input type="number" size="20">
+<input type="reset">
+</form>
+
+</body>
+</html>
+
